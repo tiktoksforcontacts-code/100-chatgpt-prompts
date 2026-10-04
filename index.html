@@ -1,1 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>100 ChatGPT Prompts | Business, Marketing & Productivity</title>
+
+<meta name="description" content="100 ready-to-use ChatGPT prompts for business, marketing, productivity, content creation and growth. Copy, customize and get better results.">
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#111827;
+    background:#ffffff;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:min(1120px,92%);
+    margin:auto;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #e5e7eb;
+}
+
+.nav-inner{
+    height:72px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:800;
+    color:#111827;
+}
+
+.nav-links{
+    display:flex;
+    gap:28px;
+    align-items:center;
+}
+
+.nav-links a{
+    font-size:14px;
+    color:#4b5563;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#2563eb;
+}
+
+.nav-button{
+    background:#2563eb;
+    color:white !important;
+    padding:11px 18px;
+    border-radius:9px;
+}
+
+/* HERO */
+
+.hero{
+    padding:100px 0 90px;
+    background:
+        radial-gradient(circle at 15% 20%,#dbeafe 0,transparent 30%),
+        radial-gradient(circle at 85% 30%,#ede9fe 0,transparent 28%),
+        #f8fafc;
+}
+
+.hero-content{
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+}
+
+.badge{
+    display:inline-block;
+    background:#dbeafe;
+    color:#1d4ed8;
+    padding:7px 14px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:22px;
+}
+
+.hero h1{
+    font-size:clamp(42px,7vw,72px);
+    line-height:1.05;
+    letter-spacing:-2.5px;
+    margin-bottom:24px;
+}
+
+.hero h1 span{
+    color:#2563eb;
+}
+
+.hero p{
+    max-width:720px;
+    margin:0 auto 32px;
+    color:#4b5563;
+    font-size:19px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:15px 25px;
+    border-radius:10px;
+    font-weight:800;
+    font-size:15px;
+    cursor:pointer;
+    border:none;
+}
+
+.btn-primary{
+    background:#2563eb;
+    color:white;
+    box-shadow:0 8px 25px rgba(37,99,235,.25);
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+.btn-secondary{
+    background:white;
+    color:#111827;
+    border:1px solid #d1d5db;
+}
+
+/* TRUST */
+
+.trust{
+    padding:22px 0;
+    background:white;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.trust-inner{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+    color:#6b7280;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* SECTIONS */
+
+.section{
+    padding:90px 0;
+}
+
+.section-header{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 50px;
+}
+
+.section-header h2{
+    font-size:40px;
+    line-height:1.15;
+    letter-spacing:-1px;
+    margin-bottom:14px;
+}
+
+.section-header p{
+    color:#6b7280;
+    font-size:17px;
+}
+
+/* BENEFITS */
+
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card{
+    border:1px solid #e5e7eb;
+    border-radius:16px;
+    padding:28px;
+    background:white;
+}
+
+.card-icon{
+    width:48px;
+    height:48px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:12px;
+    background:#eff6ff;
+    font-size:22px;
+    margin-bottom:18px;
+}
+
+.card h3{
+    margin-bottom:9px;
+    font-size:20px;
+}
+
+.card p{
+    color:#6b7280;
+}
+
+/* CATEGORIES */
+
+.categories{
+    background:#f8fafc;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+}
+
+.category{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:white;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+    padding:20px;
+}
+
+.category-number{
+    min-width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#2563eb;
+    color:white;
+    border-radius:10px;
+    font-weight:800;
+}
+
+.category h3{
+    font-size:17px;
+    margin-bottom:2px;
+}
+
+.category p{
+    color:#6b7280;
+    font-size:14px;
+}
+
+/* HOW IT WORKS */
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.step{
+    text-align:center;
+}
+
+.step-number{
+    width:50px;
+    height:50px;
+    margin:0 auto 18px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#111827;
+    color:white;
+    font-weight:800;
+}
+
+.step h3{
+    margin-bottom:8px;
+}
+
+.step p{
+    color:#6b7280;
+    font-size:14px;
+}
+
+/* PREVIEW */
+
+.preview-section{
+    background:#111827;
+    color:white;
+}
+
+.preview-box{
+    max-width:820px;
+    margin:auto;
+    background:#1f2937;
+    border:1px solid #374151;
+    border-radius:18px;
+    padding:30px;
+}
+
+.preview-label{
+    color:#93c5fd;
+    font-size:13px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:12px;
+}
+
+.preview-box h3{
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.prompt{
+    background:#111827;
+    border:1px solid #374151;
+    border-radius:12px;
+    padding:22px;
+    color:#d1d5db;
+    font-size:15px;
+}
+
+/* AUDIENCE */
+
+.audience{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.audience-item{
+    padding:25px;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+}
+
+.audience-item h3{
+    margin-bottom:7px;
+}
+
+.audience-item p{
+    color:#6b7280;
+}
+
+/* PRICE */
+
+.price-section{
+    background:#f8fafc;
+}
+
+.price-card{
+    max-width:500px;
+    margin:auto;
+    text-align:center;
+    border:2px solid #2563eb;
+    background:white;
+    border-radius:20px;
+    padding:42px 30px;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+.price-card h3{
+    font-size:25px;
+    margin-bottom:12px;
+}
+
+.price{
+    font-size:58px;
+    font-weight:900;
+    letter-spacing:-2px;
+    margin:10px 0;
+}
+
+.price-description{
+    color:#6b7280;
+    margin-bottom:25px;
+}
+
+.price-list{
+    text-align:left;
+    list-style:none;
+    margin:25px 0;
+}
+
+.price-list li{
+    padding:8px 0;
+}
+
+.price-list li::before{
+    content:"✓";
+    color:#16a34a;
+    font-weight:800;
+    margin-right:10px;
+}
+
+/* FAQ */
+
+.faq{
+    max-width:800px;
+    margin:auto;
+}
+
+.faq-item{
+    border-bottom:1px solid #e5e7eb;
+    padding:20px 0;
+}
+
+.faq-item h3{
+    font-size:17px;
+    margin-bottom:7px;
+}
+
+.faq-item p{
+    color:#6b7280;
+}
+
+/* CTA */
+
+.final-cta{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.final-cta h2{
+    font-size:42px;
+    line-height:1.15;
+    margin-bottom:15px;
+}
+
+.final-cta p{
+    max-width:650px;
+    margin:0 auto 28px;
+    color:#dbeafe;
+}
+
+.final-cta .btn-primary{
+    background:white;
+    color:#1d4ed8;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    color:#9ca3af;
+    padding:35px 0;
+}
+
+.footer-inner{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.footer-logo{
+    color:white;
+    font-weight:800;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        padding:75px 0 65px;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .benefits,
+    .steps,
+    .audience{
+        grid-template-columns:1fr;
+    }
+
+    .category-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section{
+        padding:65px 0;
+    }
+
+    .section-header h2{
+        font-size:32px;
+    }
+
+    .final-cta h2{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+    <div class="container nav-inner">
+
+        <a href="#" class="logo">
+            100 ChatGPT Prompts
+        </a>
+
+        <div class="nav-links">
+            <a href="#benefits">Benefits</a>
+            <a href="#categories">Categories</a>
+            <a href="#preview">Preview</a>
+            <a href="#faq">FAQ</a>
+            <a href="#buy" class="nav-button">Get the Prompts</a>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div class="badge">
+            100 Ready-to-Use AI Prompts
+        </div>
+
+        <h1>
+            Get Better Results from <span>ChatGPT.</span>
+        </h1>
+
+        <p>
+            100 practical ChatGPT prompts for business, marketing,
+            content creation, productivity and growth.
+            Copy, customize and get better results faster.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#buy" class="btn btn-primary">
+                Get Instant Access — $19.99
+            </a>
+
+            <a href="#preview" class="btn btn-secondary">
+                See a Preview
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TRUST -->
+
+<div class="trust">
+    <div class="container trust-inner">
+        <span>✓ 100 Ready-to-Use Prompts</span>
+        <span>✓ 10 Practical Categories</span>
+        <span>✓ Beginner Friendly</span>
+        <span>✓ Instant Digital Product</span>
+    </div>
+</div>
+
+
+<!-- BENEFITS -->
+
+<section class="section" id="benefits">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>
+                Stop staring at a blank ChatGPT screen.
+            </h2>
+
+            <p>
+                Start with proven prompt structures and customize them
+                for your own needs.
+            </p>
+
+        </div>
+
+        <div class="benefits">
+
+            <div class="card">
+
+                <div class="card-icon">⚡</div>
+
+                <h3>Save Time</h3>
+
+                <p>
+                    Start with ready-to-use prompts instead of spending
+                    time trying to figure out what to ask ChatGPT.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-icon">💡</div>
+
+                <h3>Get Better Ideas</h3>
+
+                <p>
+                    Use structured prompts for marketing, content,
+                    business planning, productivity and growth.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-icon">✏️</div>
+
+                <h3>Easy to Customize</h3>
+
+                <p>
+                    Replace the information inside the brackets and
+                    adapt every prompt to your own situation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="section categories" id="categories">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>100 prompts. 10 useful categories.</h2>
+
+            <p>
+                Everything organized so you can quickly find the
+                prompt you need.
+            </p>
+
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category">
+                <div class="category-number">01</div>
+                <div>
+                    <h3>Sales & Marketing</h3>
+                    <p>Prompts 1–10</p>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-number">02</div>
+                <div>
+                    <h3>Social Media</h3>
+                    <p>Prompts 11–20</p>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-number">03</div>
+                <div>
+                    <h3>Content Creation</h3>
+                    <p>Prompts 21–30</p>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-number">04</div>
+                <div>
+                    <h3>Customer Service</h3>
+                    <p>Prompts 31–40</p>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-number">05</div>
+                <div>
+                    <h3>Business</h3>
+                    <p>Prompts 41–50</p>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-number">06</div>
+                <div>
+                    <h3>Email</h3>
+                    <p>Prompts 51–60</p>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-number">07</div>
+                <div>
+                    <h3>Productivity</h3>
+                    <p>Prompts 61–70</p>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-number">08</div>
+                <div>
+                    <h3>Ideas & Brainstorming</h3>
+                    <p>Prompts 71–80</p>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-number">09</div>
+                <div>
+                    <h3>Personal Branding</h3>
+                    <p>Prompts 81–90</p>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-number">10</div>
+                <div>
+                    <h3>Growth</h3>
+                    <p>Prompts 91–100</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>How it works</h2>
+
+            <p>
+                Using the prompts is simple.
+            </p>
+
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">1</div>
+
+                <h3>Copy</h3>
+
+                <p>
+                    Choose a prompt and copy it.
+                </p>
+
+            </div>
+
+            <div class="step">
+
+                <div class="step-number">2</div>
+
+                <h3>Customize</h3>
+
+                <p>
+                    Replace the bracketed information.
+                </p>
+
+            </div>
+
+            <div class="step">
+
+                <div class="step-number">3</div>
+
+                <h3>Generate</h3>
+
+                <p>
+                    Paste it into ChatGPT and generate your result.
+                </p>
+
+            </div>
+
+            <div class="step">
+
+                <div class="step-number">4</div>
+
+                <h3>Improve</h3>
+
+                <p>
+                    Ask ChatGPT to improve or refine the result.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PREVIEW -->
+
+<section class="section preview-section" id="preview">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>See what's inside</h2>
+
+            <p style="color:#9ca3af;">
+                Here's an example of one of the 100 prompts.
+            </p>
+
+        </div>
+
+        <div class="preview-box">
+
+            <div class="preview-label">
+                Example Prompt
+            </div>
+
+            <h3>Create a Sales Strategy</h3>
+
+            <div class="prompt">
+                Create a practical sales strategy for my business.
+
+                Business: [Business]
+                Product/Service: [Product or Service]
+                Target Customer: [Target Customer]
+                Price: [Price]
+                Main Goal: [Goal]
+
+                Include customer acquisition ideas, sales channels,
+                messaging, follow-up steps and practical actions
+                I can start using immediately.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AUDIENCE -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>Built for everyday AI users</h2>
+
+            <p>
+                You don't need to be an AI expert to use these prompts.
+            </p>
+
+        </div>
+
+        <div class="audience">
+
+            <div class="audience-item">
+                <h3>👤 Individuals</h3>
+                <p>
+                    Use ChatGPT for productivity, ideas, writing,
+                    personal branding and everyday tasks.
+                </p>
+            </div>
+
+            <div class="audience-item">
+                <h3>💼 Small Business Owners</h3>
+                <p>
+                    Create marketing ideas, improve sales,
+                    handle customers and plan business growth.
+                </p>
+            </div>
+
+            <div class="audience-item">
+                <h3>📱 Creators & Marketers</h3>
+                <p>
+                    Generate content ideas, social posts,
+                    video scripts and marketing campaigns.
+                </p>
+            </div>
+
+            <div class="audience-item">
+                <h3>🚀 Beginners</h3>
+                <p>
+                    Get useful results from ChatGPT without needing
+                    advanced prompt-writing knowledge.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRICE -->
+
+<section class="section price-section" id="buy">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>Get the complete prompt toolkit</h2>
+
+            <p>
+                One simple digital product. 100 practical prompts.
+            </p>
+
+        </div>
+
+        <div class="price-card">
+
+            <h3>100 ChatGPT Prompts</h3>
+
+            <div class="price">
+                $19.99
+            </div>
+
+            <p class="price-description">
+                For Business, Marketing & Productivity
+            </p>
+
+            <ul class="price-list">
+
+                <li>100 ready-to-use ChatGPT prompts</li>
+                <li>10 practical categories</li>
+                <li>Business and marketing prompts</li>
+                <li>Social media and content prompts</li>
+                <li>Productivity and growth prompts</li>
+                <li>Beginner-friendly instructions</li>
+                <li>Digital PDF format</li>
+
+            </ul>
+
+            <!-- PAYMENT LINK WILL BE ADDED HERE -->
+
+            <button class="btn btn-primary" style="width:100%;" onclick="showPaymentMessage()">
+                Get Instant Access — $19.99
+            </button>
+
+            <p style="font-size:12px;color:#9ca3af;margin-top:14px;">
+                Secure payment and instant delivery.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="section" id="faq">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <h2>Frequently asked questions</h2>
+
+        </div>
+
+        <div class="faq">
+
+            <div class="faq-item">
+
+                <h3>What do I receive?</h3>
+
+                <p>
+                    You receive a digital PDF containing 100
+                    ready-to-use ChatGPT prompts.
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h3>Do I need to be good at ChatGPT?</h3>
+
+                <p>
+                    No. The prompts are designed to be simple,
+                    practical and beginner-friendly.
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h3>Can I customize the prompts?</h3>
+
+                <p>
+                    Yes. Replace the information inside the brackets
+                    with your own business, goals or situation.
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h3>What language are the prompts in?</h3>
+
+                <p>
+                    The prompt toolkit is written in English.
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h3>Is this a physical product?</h3>
+
+                <p>
+                    No. This is a digital product delivered as a PDF.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL CTA -->
+
+<section class="final-cta">
+
+    <div class="container">
+
+        <h2>
+            Stop guessing what to ask ChatGPT.
+        </h2>
+
+        <p>
+            Get 100 ready-to-use prompts and start creating
+            better results today.
+        </p>
+
+        <a href="#buy" class="btn btn-primary">
+            Get 100 ChatGPT Prompts — $19.99
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div class="footer-logo">
+            100 ChatGPT Prompts
+        </div>
+
+        <div>
+            © 2026 100 ChatGPT Prompts. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+function showPaymentMessage(){
+
+    alert(
+        "Payment setup is coming next. Your product price is $19.99."
+    );
+
+}
+</script>
+
+</body>
+</html>
